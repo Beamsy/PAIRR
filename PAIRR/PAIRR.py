@@ -1,4 +1,6 @@
 import voice_engine
-while True:
-    phrase = raw_input('What should I say? ')
-    voice_engine.say(phrase)
+import name
+code = raw_input()
+student = name.name(code)
+greeting = 'Hello there {0}, how are you today?'.format(student)
+voice_engine.say(greeting)
