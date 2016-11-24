@@ -10,3 +10,7 @@ def say(utterance):
     engine.say(utterance)
     #And this tells the engine to speak the command and move on.
     engine.iterate()
+
+    
+#Usage for this module is merely an import of the whole module,
+#and import_name.say("Say this")
