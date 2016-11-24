@@ -23,6 +23,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PAIRR.py" />
+    <Compile Include="name.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="voice_engine.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
