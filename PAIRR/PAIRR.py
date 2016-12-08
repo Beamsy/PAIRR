@@ -10,3 +10,4 @@ while True:
     greeting = 'Hello {0}.'.format(student)
     say(greeting)
     print greeting
+
