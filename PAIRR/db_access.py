@@ -1,18 +1,22 @@
 import mysql.connector
 from mysql.connector import errorcode
+import ConfigParser
 
 
 # Call this init and assign to variable in main class.
 # This should then be passed to other modules using the database,
 # so we are only using one database connection.
 def __init__():
+    # Read the database connection settings from a config file
+    config = ConfigParser.SafeConfigParser()
+    config.read('Config/database.cfg')
     # Enclose db connection in a try/except
     try:
         # This is the actual database connection event
-        db = mysql.connector.connect(host="localhost",  # set host (usually localhost)
-                                     user="dbpairr",  # set username
-                                     passwd="robot",  # set password
-                                     db="dbpairr")  # name of the database
+        db = mysql.connector.connect(host=config.get('Connection', 'host'),  # set host (usually localhost)
+                                     user=config.get('Connection', 'user'),  # set username
+                                     passwd=config.get('Connection', 'passwd'),  # set password
+                                     db=config.get('Connection', 'db'))  # name of the database
         return db
     # Catches errors from MySQL connection
     # Gives us some custom error messages
