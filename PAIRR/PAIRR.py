@@ -2,7 +2,6 @@ import voice_engine
 from voice_engine import say
 import db_access
 import student_access
-import pir_util
 say("Initiating")
 said = False
 db = db_access.__init__()
