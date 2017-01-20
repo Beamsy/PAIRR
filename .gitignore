@@ -241,6 +241,13 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 
-# Database wrapper
-Database/
-Database/mysql!
+# Database Wrapper
+Database/apache
+Database/*.*
+Database/cgi-bin
+Database/conf_files
+Database/home
+Database/php
+Database/s
+Database/tmp
+Database/www
