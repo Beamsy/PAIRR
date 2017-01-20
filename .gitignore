@@ -243,4 +243,4 @@ ModelManifest.xml
 
 # Database wrapper
 Database/
-Database/mysql!
+Database/mysql/!
