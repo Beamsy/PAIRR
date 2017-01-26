@@ -1,0 +1,4 @@
+Python Modules:
+    pyttsx
+    mysql.connector
+    RPi.GPIO
