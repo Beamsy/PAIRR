@@ -1,0 +1,18 @@
+141001 11:49:47  InnoDB: Started; log sequence number 0 59080
+141001 11:49:47 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141001 11:49:48 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141001 11:49:48  InnoDB: Starting shutdown...
+141001 11:49:51  InnoDB: Shutdown completed; log sequence number 0 59080
+141001 11:49:51 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+141001 11:49:53  InnoDB: Started; log sequence number 0 59080
+141001 11:49:54 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141001 12:27:39 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141001 12:27:39  InnoDB: Starting shutdown...
+141001 12:27:42  InnoDB: Shutdown completed; log sequence number 0 59080
+141001 12:27:42 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+

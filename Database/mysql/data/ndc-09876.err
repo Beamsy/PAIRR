@@ -1,0 +1,36 @@
+110926  9:26:40  InnoDB: Started; log sequence number 0 43654
+110926  9:26:40 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+110926  9:26:40 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+110926 10:01:05 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+110926 10:01:05  InnoDB: Starting shutdown...
+110926 10:01:06  InnoDB: Shutdown completed; log sequence number 0 43654
+110926 10:01:06 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+
+110928 11:51:55  InnoDB: Started; log sequence number 0 43654
+110928 11:51:55 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+110928 11:51:55 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+110928 12:19:43 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+110928 12:19:43  InnoDB: Starting shutdown...
+110928 12:19:45  InnoDB: Shutdown completed; log sequence number 0 43654
+110928 12:19:45 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+
+120509 11:51:20  InnoDB: Started; log sequence number 0 43665
+120509 11:51:21 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+120509 11:51:22 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+120509 11:51:22  InnoDB: Starting shutdown...
+120509 11:51:24  InnoDB: Shutdown completed; log sequence number 0 43665
+120509 11:51:24 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+
+120509 11:51:26  InnoDB: Started; log sequence number 0 43665
+120509 11:51:26 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+120509 12:27:29 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+

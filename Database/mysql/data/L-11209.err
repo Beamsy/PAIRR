@@ -1,0 +1,6 @@
+160129 15:17:06  InnoDB: Started; log sequence number 0 122702
+160129 15:17:06 [Note] Recovering after a crash using mysql-bin
+160129 15:17:06 [Note] Starting crash recovery...
+160129 15:17:06 [Note] Crash recovery finished.
+160129 15:17:09 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)

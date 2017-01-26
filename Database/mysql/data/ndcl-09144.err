@@ -1,0 +1,13 @@
+081121 11:09:33  InnoDB: Started; log sequence number 0 43634
+081121 11:09:33 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+081121 11:09:33 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+081121 11:14:48 [ERROR] MySql\bin\mysqld.exe: Got error 127 from storage engine
+081121 11:14:48 [ERROR] MySql\bin\mysqld.exe: Sort aborted
+081121 11:35:23 [Note] MySql\bin\mysqld.exe: Normal shutdown
+
+081121 11:35:23  InnoDB: Starting shutdown...
+081121 11:35:25  InnoDB: Shutdown completed; log sequence number 0 43634
+081121 11:35:25 [Note] MySql\bin\mysqld.exe: Shutdown complete
+

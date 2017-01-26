@@ -1,0 +1,9 @@
+121012 10:33:36  InnoDB: Started; log sequence number 0 43665
+121012 10:33:38 [Note] \\BPL-FS01\Staff User Data$\TIM~1.BAR\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+121012 10:33:47  InnoDB: Started; log sequence number 0 43665
+121012 10:33:47 [Note] Recovering after a crash using mysql-bin
+121012 10:33:47 [Note] Starting crash recovery...
+121012 10:33:47 [Note] Crash recovery finished.
+121012 10:33:49 [Note] \\BPL-FS01\Staff User Data$\TIM~1.BAR\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)

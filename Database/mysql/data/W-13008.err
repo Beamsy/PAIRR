@@ -1,0 +1,456 @@
+130909  9:27:26  InnoDB: Started; log sequence number 0 43665
+130909  9:27:26 [Note] Recovering after a crash using mysql-bin
+130909  9:27:26 [Note] Starting crash recovery...
+130909  9:27:26 [Note] Crash recovery finished.
+130909  9:27:28 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130909  9:42:51  InnoDB: Started; log sequence number 0 43665
+130909  9:42:51 [Note] Recovering after a crash using mysql-bin
+130909  9:42:51 [Note] Starting crash recovery...
+130909  9:42:51 [Note] Crash recovery finished.
+130909  9:42:52 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130909  9:43:13  InnoDB: Started; log sequence number 0 43665
+130909  9:43:13 [Note] Recovering after a crash using mysql-bin
+130909  9:43:13 [Note] Starting crash recovery...
+130909  9:43:13 [Note] Crash recovery finished.
+130909  9:43:14 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130909 15:27:46 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+130909 15:27:46  InnoDB: Starting shutdown...
+130909 15:27:47  InnoDB: Shutdown completed; log sequence number 0 43665
+130909 15:27:47 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+130916  9:56:36  InnoDB: Started; log sequence number 0 43665
+130916  9:56:36 [Note] Recovering after a crash using mysql-bin
+130916  9:56:36 [Note] Starting crash recovery...
+130916  9:56:36 [Note] Crash recovery finished.
+130916  9:56:39 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130916  9:56:44  InnoDB: Started; log sequence number 0 43665
+130916  9:56:44 [Note] Recovering after a crash using mysql-bin
+130916  9:56:44 [Note] Starting crash recovery...
+130916  9:56:44 [Note] Crash recovery finished.
+130916  9:56:44 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130916 15:17:51 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+130916 15:17:51  InnoDB: Starting shutdown...
+130916 15:17:53  InnoDB: Shutdown completed; log sequence number 0 43665
+130916 15:17:53 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+130923 10:01:20  InnoDB: Started; log sequence number 0 43665
+130923 10:01:20 [Note] Recovering after a crash using mysql-bin
+130923 10:01:20 [Note] Starting crash recovery...
+130923 10:01:20 [Note] Crash recovery finished.
+130923 10:01:22 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130923 11:43:03  InnoDB: Started; log sequence number 0 43665
+130923 11:43:04 [Note] Recovering after a crash using mysql-bin
+130923 11:43:04 [Note] Starting crash recovery...
+130923 11:43:04 [Note] Crash recovery finished.
+130923 11:43:06 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+130930 12:18:29  InnoDB: Started; log sequence number 0 43665
+130930 12:18:29 [Note] Recovering after a crash using mysql-bin
+130930 12:18:29 [Note] Starting crash recovery...
+130930 12:18:29 [Note] Crash recovery finished.
+130930 12:18:30 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131007 14:42:29  InnoDB: Started; log sequence number 0 43665
+131007 14:42:29 [Note] Recovering after a crash using mysql-bin
+131007 14:42:29 [Note] Starting crash recovery...
+131007 14:42:29 [Note] Crash recovery finished.
+131007 14:42:31 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131014 10:18:38  InnoDB: Started; log sequence number 0 43665
+131014 10:18:38 [Note] Recovering after a crash using mysql-bin
+131014 10:18:38 [Note] Starting crash recovery...
+131014 10:18:38 [Note] Crash recovery finished.
+131014 10:18:40 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131021 12:10:27  InnoDB: Started; log sequence number 0 43665
+131021 12:10:27 [Note] Recovering after a crash using mysql-bin
+131021 12:10:27 [Note] Starting crash recovery...
+131021 12:10:27 [Note] Crash recovery finished.
+131021 12:10:30 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131021 14:39:59  InnoDB: Started; log sequence number 0 43665
+131021 14:39:59 [Note] Recovering after a crash using mysql-bin
+131021 14:39:59 [Note] Starting crash recovery...
+131021 14:39:59 [Note] Crash recovery finished.
+131021 14:40:01 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131111 10:01:15  InnoDB: Started; log sequence number 0 43665
+131111 10:01:19 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131111 10:01:24  InnoDB: Started; log sequence number 0 43665
+131111 10:01:24 [Note] Recovering after a crash using mysql-bin
+131111 10:01:24 [Note] Starting crash recovery...
+131111 10:01:24 [Note] Crash recovery finished.
+131111 10:01:25 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131111 16:13:14 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131111 16:13:14  InnoDB: Starting shutdown...
+131111 16:13:16  InnoDB: Shutdown completed; log sequence number 0 43665
+131111 16:13:16 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+131118 11:32:51  InnoDB: Started; log sequence number 0 43665
+131118 11:32:54 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131118 14:03:03  InnoDB: Started; log sequence number 0 43665
+131118 14:03:03 [Note] Recovering after a crash using mysql-bin
+131118 14:03:03 [Note] Starting crash recovery...
+131118 14:03:03 [Note] Crash recovery finished.
+131118 14:03:04 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131118 16:13:55 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131118 16:13:55  InnoDB: Starting shutdown...
+131118 16:13:57  InnoDB: Shutdown completed; log sequence number 0 43665
+131118 16:13:57 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+131125 11:22:33  InnoDB: Started; log sequence number 0 43665
+131125 11:22:35 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131125 14:34:35  InnoDB: Started; log sequence number 0 43665
+131125 14:34:35 [Note] Recovering after a crash using mysql-bin
+131125 14:34:35 [Note] Starting crash recovery...
+131125 14:34:35 [Note] Crash recovery finished.
+131125 14:34:36 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131125 14:34:42  InnoDB: Started; log sequence number 0 43665
+131125 14:34:42 [Note] Recovering after a crash using mysql-bin
+131125 14:34:42 [Note] Starting crash recovery...
+131125 14:34:42 [Note] Crash recovery finished.
+131125 14:34:42 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131125 16:00:54 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131125 16:00:54  InnoDB: Starting shutdown...
+131125 16:00:56  InnoDB: Shutdown completed; log sequence number 0 43665
+131125 16:00:56 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+131202 10:13:56  InnoDB: Started; log sequence number 0 43665
+131202 10:13:57 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131202 10:14:07  InnoDB: Started; log sequence number 0 43665
+131202 10:14:07 [Note] Recovering after a crash using mysql-bin
+131202 10:14:07 [Note] Starting crash recovery...
+131202 10:14:07 [Note] Crash recovery finished.
+131202 10:14:07 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131202 15:31:52 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131202 15:31:52  InnoDB: Starting shutdown...
+131202 15:31:53  InnoDB: Shutdown completed; log sequence number 0 43665
+131202 15:31:53 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+131202 15:31:57  InnoDB: Started; log sequence number 0 43665
+131202 15:31:58 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131202 15:59:55 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131202 15:59:55  InnoDB: Starting shutdown...
+131202 15:59:57  InnoDB: Shutdown completed; log sequence number 0 43665
+131202 15:59:57 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+131209 10:41:32  InnoDB: Started; log sequence number 0 43665
+131209 10:41:32 [Note] Recovering after a crash using mysql-bin
+131209 10:41:32 [Note] Starting crash recovery...
+131209 10:41:32 [Note] Crash recovery finished.
+131209 10:41:34 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131209 12:13:30  InnoDB: Started; log sequence number 0 43665
+131209 12:13:30 [Note] Recovering after a crash using mysql-bin
+131209 12:13:30 [Note] Starting crash recovery...
+131209 12:13:30 [Note] Crash recovery finished.
+131209 12:13:31 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131209 15:40:35 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131209 15:40:36  InnoDB: Starting shutdown...
+131209 15:40:38  InnoDB: Shutdown completed; log sequence number 0 43665
+131209 15:40:38 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+131216 10:49:56  InnoDB: Started; log sequence number 0 43665
+131216 10:49:56 [Note] Recovering after a crash using mysql-bin
+131216 10:49:56 [Note] Starting crash recovery...
+131216 10:49:56 [Note] Crash recovery finished.
+131216 10:49:57 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131216 10:50:07  InnoDB: Started; log sequence number 0 43665
+131216 10:50:07 [Note] Recovering after a crash using mysql-bin
+131216 10:50:07 [Note] Starting crash recovery...
+131216 10:50:07 [Note] Crash recovery finished.
+131216 10:50:08 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+131216 16:17:50 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+131216 16:17:50  InnoDB: Starting shutdown...
+131216 16:17:51  InnoDB: Shutdown completed; log sequence number 0 43665
+131216 16:17:51 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140106 10:00:12  InnoDB: Started; log sequence number 0 43665
+140106 10:00:16 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140106 10:00:23  InnoDB: Started; log sequence number 0 43665
+140106 10:00:23 [Note] Recovering after a crash using mysql-bin
+140106 10:00:23 [Note] Starting crash recovery...
+140106 10:00:23 [Note] Crash recovery finished.
+140106 10:00:24 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140106 15:59:53 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140106 15:59:53  InnoDB: Starting shutdown...
+140106 15:59:55  InnoDB: Shutdown completed; log sequence number 0 43665
+140106 15:59:55 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140113 10:17:59  InnoDB: Started; log sequence number 0 43665
+140113 10:18:01 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140113 10:18:02 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140113 10:18:02  InnoDB: Starting shutdown...
+140113 10:18:03  InnoDB: Shutdown completed; log sequence number 0 43665
+140113 10:18:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140113 10:18:07  InnoDB: Started; log sequence number 0 43665
+140113 10:18:07 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140113 15:59:58 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140113 15:59:58  InnoDB: Starting shutdown...
+140113 16:00:00  InnoDB: Shutdown completed; log sequence number 0 43665
+140113 16:00:00 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140127 10:55:30  InnoDB: Started; log sequence number 0 43665
+140127 10:55:31 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140127 10:55:36  InnoDB: Started; log sequence number 0 43665
+140127 10:55:36 [Note] Recovering after a crash using mysql-bin
+140127 10:55:36 [Note] Starting crash recovery...
+140127 10:55:36 [Note] Crash recovery finished.
+140127 10:55:37 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140127 16:03:05 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140127 16:03:05  InnoDB: Starting shutdown...
+140127 16:03:07  InnoDB: Shutdown completed; log sequence number 0 43665
+140127 16:03:07 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140203 12:02:30  InnoDB: Started; log sequence number 0 43665
+140203 12:02:31 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140203 13:11:01 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140203 13:11:01  InnoDB: Starting shutdown...
+140203 13:11:03  InnoDB: Shutdown completed; log sequence number 0 43665
+140203 13:11:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140203 13:11:07  InnoDB: Started; log sequence number 0 43665
+140203 13:11:07 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140203 16:00:59 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140203 16:01:00  InnoDB: Starting shutdown...
+140203 16:01:03  InnoDB: Shutdown completed; log sequence number 0 57446
+140203 16:01:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140908 13:44:28  InnoDB: Started; log sequence number 0 59080
+140908 13:44:29 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140908 13:45:02  InnoDB: Started; log sequence number 0 59080
+140908 13:45:02 [Note] Recovering after a crash using mysql-bin
+140908 13:45:02 [Note] Starting crash recovery...
+140908 13:45:02 [Note] Crash recovery finished.
+140908 13:45:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140908 15:26:42 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+140908 15:26:42  InnoDB: Starting shutdown...
+140908 15:26:43  InnoDB: Shutdown completed; log sequence number 0 59080
+140908 15:26:43 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+140915  9:56:16  InnoDB: Started; log sequence number 0 59080
+140915  9:56:17 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140922 10:33:49  InnoDB: Started; log sequence number 0 59080
+140922 10:33:49 [Note] Recovering after a crash using mysql-bin
+140922 10:33:49 [Note] Starting crash recovery...
+140922 10:33:49 [Note] Crash recovery finished.
+140922 10:33:50 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+140929 15:03:01  InnoDB: Started; log sequence number 0 59080
+140929 15:03:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141013 13:55:01  InnoDB: Started; log sequence number 0 59080
+141013 13:55:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141020 10:05:25  InnoDB: Started; log sequence number 0 59080
+141020 10:05:25 [Note] Recovering after a crash using mysql-bin
+141020 10:05:25 [Note] Starting crash recovery...
+141020 10:05:25 [Note] Crash recovery finished.
+141020 10:05:26 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141103 11:48:24  InnoDB: Started; log sequence number 0 59080
+141103 11:48:25 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141103 11:48:27 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141103 11:48:27  InnoDB: Starting shutdown...
+141103 11:48:28  InnoDB: Shutdown completed; log sequence number 0 59080
+141103 11:48:28 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+141103 11:48:32  InnoDB: Started; log sequence number 0 59080
+141103 11:48:32 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141110 11:38:27  InnoDB: Started; log sequence number 0 59080
+141110 11:38:28 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141117 13:32:19  InnoDB: Started; log sequence number 0 59080
+141117 13:32:19 [Note] Recovering after a crash using mysql-bin
+141117 13:32:19 [Note] Starting crash recovery...
+141117 13:32:19 [Note] Crash recovery finished.
+141117 13:32:20 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141117 13:32:21 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141117 13:32:21  InnoDB: Starting shutdown...
+141117 13:32:23  InnoDB: Shutdown completed; log sequence number 0 59080
+141117 13:32:23 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+141117 13:32:26  InnoDB: Started; log sequence number 0 59080
+141117 13:32:27 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141124 10:42:18  InnoDB: Started; log sequence number 0 59080
+141124 10:42:18 [Note] Recovering after a crash using mysql-bin
+141124 10:42:18 [Note] Starting crash recovery...
+141124 10:42:18 [Note] Crash recovery finished.
+141124 10:42:19 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141201 10:30:55  InnoDB: Started; log sequence number 0 59080
+141201 10:30:55 [Note] Recovering after a crash using mysql-bin
+141201 10:30:55 [Note] Starting crash recovery...
+141201 10:30:55 [Note] Crash recovery finished.
+141201 10:30:56 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141201 10:31:32  InnoDB: Started; log sequence number 0 59080
+141201 10:31:32 [Note] Recovering after a crash using mysql-bin
+141201 10:31:32 [Note] Starting crash recovery...
+141201 10:31:32 [Note] Crash recovery finished.
+141201 10:31:33 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141201 15:27:48 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141201 15:27:48  InnoDB: Starting shutdown...
+141201 15:27:50  InnoDB: Shutdown completed; log sequence number 0 63047
+141201 15:27:50 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+141208 12:03:33  InnoDB: Started; log sequence number 0 65392
+141208 12:03:34 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141208 12:05:01  InnoDB: Started; log sequence number 0 65392
+141208 12:05:01 [Note] Recovering after a crash using mysql-bin
+141208 12:05:01 [Note] Starting crash recovery...
+141208 12:05:01 [Note] Crash recovery finished.
+141208 12:05:02 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141208 15:19:53 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141208 15:19:53  InnoDB: Starting shutdown...
+141208 15:19:55  InnoDB: Shutdown completed; log sequence number 0 65402
+141208 15:19:55 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\Unit16\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+141215 10:03:32  InnoDB: Started; log sequence number 0 68194
+141215 10:03:33 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141215 10:53:46  InnoDB: Started; log sequence number 0 68194
+141215 10:53:46 [Note] Recovering after a crash using mysql-bin
+141215 10:53:46 [Note] Starting crash recovery...
+141215 10:53:46 [Note] Crash recovery finished.
+141215 10:53:47 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+141215 15:28:44 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+141215 15:28:44  InnoDB: Starting shutdown...
+141215 15:28:46  InnoDB: Shutdown completed; log sequence number 0 68194
+141215 15:28:46 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+150105 15:03:39  InnoDB: Started; log sequence number 0 69703
+150105 15:03:40 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150112 11:41:49  InnoDB: Started; log sequence number 0 69703
+150112 11:41:51 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150119 10:12:13  InnoDB: Started; log sequence number 0 69703
+150119 10:12:13 [Note] Recovering after a crash using mysql-bin
+150119 10:12:13 [Note] Starting crash recovery...
+150119 10:12:13 [Note] Crash recovery finished.
+150119 10:12:16 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150119 10:13:56  InnoDB: Started; log sequence number 0 69703
+150119 10:13:56 [Note] Recovering after a crash using mysql-bin
+150119 10:13:56 [Note] Starting crash recovery...
+150119 10:13:56 [Note] Crash recovery finished.
+150119 10:13:57 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150119 15:37:24 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+150119 15:37:24  InnoDB: Starting shutdown...
+150119 15:37:27  InnoDB: Shutdown completed; log sequence number 0 69703
+150119 15:37:27 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
+150126 14:57:52  InnoDB: Started; log sequence number 0 69703
+150126 14:57:52 [Note] Recovering after a crash using mysql-bin
+150126 14:57:52 [Note] Starting crash recovery...
+150126 14:57:52 [Note] Crash recovery finished.
+150126 14:57:54 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150202 10:45:09  InnoDB: Started; log sequence number 0 69703
+150202 10:45:11 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150209 10:15:07  InnoDB: Started; log sequence number 0 69733
+150209 10:15:08 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150209 10:15:17  InnoDB: Started; log sequence number 0 69733
+150209 10:15:17 [Note] Recovering after a crash using mysql-bin
+150209 10:15:17 [Note] Starting crash recovery...
+150209 10:15:17 [Note] Crash recovery finished.
+150209 10:15:18 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150209 14:28:21 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+150209 14:28:21  InnoDB: Starting shutdown...
+150223 10:23:43  InnoDB: Started; log sequence number 0 69753
+150223 10:23:43 [Note] Recovering after a crash using mysql-bin
+150223 10:23:43 [Note] Starting crash recovery...
+150223 10:23:43 [Note] Crash recovery finished.
+150223 10:23:44 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150302 12:12:06  InnoDB: Started; log sequence number 0 69753
+150302 12:12:06 [Note] Recovering after a crash using mysql-bin
+150302 12:12:06 [Note] Starting crash recovery...
+150302 12:12:06 [Note] Crash recovery finished.
+150302 12:12:07 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150309 11:45:27  InnoDB: Started; log sequence number 0 69753
+150309 11:45:27 [Note] Recovering after a crash using mysql-bin
+150309 11:45:27 [Note] Starting crash recovery...
+150309 11:45:27 [Note] Crash recovery finished.
+150309 11:45:29 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150309 11:45:34  InnoDB: Started; log sequence number 0 69753
+150309 11:45:34 [Note] Recovering after a crash using mysql-bin
+150309 11:45:34 [Note] Starting crash recovery...
+150309 11:45:34 [Note] Crash recovery finished.
+150309 11:45:35 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+150309 12:36:03 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Normal shutdown
+
+150309 12:36:03  InnoDB: Starting shutdown...
+150309 12:36:06  InnoDB: Shutdown completed; log sequence number 0 69753
+150309 12:36:06 [Note] V:\SCHOOL~2\COMPUT~1\NATION~1\Units\UNIT27~1\EasyPhP\MySql\bin\mysqld.exe: Shutdown complete
+
