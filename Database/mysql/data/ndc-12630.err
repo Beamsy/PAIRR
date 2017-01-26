@@ -1,0 +1,22 @@
+110929 14:52:40  InnoDB: Started; log sequence number 0 43654
+110929 14:52:40 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+110929 14:52:40 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+110929 15:26:33 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+110929 15:26:33  InnoDB: Starting shutdown...
+110929 15:26:36  InnoDB: Shutdown completed; log sequence number 0 43654
+110929 15:26:36 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+
+111103 15:10:18  InnoDB: Started; log sequence number 0 43654
+111103 15:10:18 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+111103 15:10:18 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+111103 15:12:16 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+111103 15:12:16  InnoDB: Starting shutdown...
+111103 15:12:18  InnoDB: Shutdown completed; log sequence number 0 43654
+111103 15:12:18 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+

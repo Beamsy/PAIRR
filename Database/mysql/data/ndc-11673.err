@@ -1,0 +1,33 @@
+110922 12:08:25  InnoDB: Started; log sequence number 0 43654
+110922 12:08:25 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+110922 12:08:25 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+110922 12:56:08 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+110922 12:56:08  InnoDB: Starting shutdown...
+110922 12:56:11  InnoDB: Shutdown completed; log sequence number 0 43654
+110922 12:56:11 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+
+110929 11:37:01  InnoDB: Started; log sequence number 0 43654
+110929 11:37:01 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+110929 11:37:01 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+110929 12:55:40 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+110929 12:55:40  InnoDB: Starting shutdown...
+110929 12:55:43  InnoDB: Shutdown completed; log sequence number 0 43654
+110929 12:55:43 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+
+111006 12:04:24  InnoDB: Started; log sequence number 0 43654
+111006 12:04:24 [Warning] mysql.user table is not updated to new password format; Disabling new password usage until mysql_fix_privilege_tables is run
+111006 12:04:24 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
+Version: '4.1.9-max'  socket: ''  port: 3306  Source distribution
+111006 12:54:32 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
+
+111006 12:54:32  InnoDB: Starting shutdown...
+111006 12:54:34  InnoDB: Shutdown completed; log sequence number 0 43654
+111006 12:54:34 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
+

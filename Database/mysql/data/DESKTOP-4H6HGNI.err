@@ -1,0 +1,26 @@
+161205 10:18:01  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+161205 10:18:01  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 128378.
+InnoDB: Doing recovery: scanned up to log sequence number 0 128378
+InnoDB: Last MySQL binlog file position 0 476, file name .\mysql-bin.000623
+161205 10:18:02  InnoDB: Started; log sequence number 0 128378
+161205 10:18:02 [Note] Recovering after a crash using mysql-bin
+161205 10:18:02 [Note] Starting crash recovery...
+161205 10:18:02 [Note] Crash recovery finished.
+161205 10:18:40  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+161205 10:18:40  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 128378.
+InnoDB: Doing recovery: scanned up to log sequence number 0 128378
+InnoDB: Last MySQL binlog file position 0 476, file name .\mysql-bin.000623
+161205 10:18:41  InnoDB: Started; log sequence number 0 128378
+161205 10:18:41 [Note] Recovering after a crash using mysql-bin
+161205 10:18:41 [Note] Starting crash recovery...
+161205 10:18:41 [Note] Crash recovery finished.

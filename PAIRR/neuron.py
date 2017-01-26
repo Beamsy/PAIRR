@@ -1,6 +1,5 @@
 class Neuron():
-    label = ""
-    layer = 0
+    float[]
 
     def __init__(self):
         print "neuron initiated"
