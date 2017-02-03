@@ -1,12 +1,6 @@
-import voice_engine
 from voice_engine import say
-<<<<<<< HEAD
-import name
-
-=======
 import db_access
 import student_access
->>>>>>> origin/master
 say("Initiating")
 said = False
 db = db_access.__init__()
