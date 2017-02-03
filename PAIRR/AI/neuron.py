@@ -1,19 +1,19 @@
 class Neuron:
 
     identifier = None
-    idnum = None
+    id_num = None
     total = 0
 
-    def __init__(self, _idnum, _identifier):
-        self.idnum = _idnum
+    def __init__(self, _id_num, _identifier):
+        self.id_num = _id_num
         self.identifier = _identifier
-        print "neuron " + str(self.idnum) + " initiated"
+        print "neuron " + str(self.id_num) + " initiated"
 
     def sum_weighted_inputs(self, alvls_studied, alvl_list):
-        print "Summing neuron " + str(self.idnum)
+        print "Summing neuron " + str(self.id_num)
         total = 0
         for i in alvls_studied:
-            total = total + alvl_list[i].weights[self.idnum]
+            total = total + alvl_list[i].weights[self.id_num]
         self.total = total
 
     def get_total(self):
@@ -22,4 +22,4 @@ class Neuron:
     def __repr__(self):
         return '{}: {} {}'.format(self.__class__.__name__,
                                   self.identifier,
-                                  self.idnum)
+                                  self.id_num)
