@@ -1,10 +1,12 @@
 class Neuron:
 
+    identifier = None
     idnum = None
     total = 0
 
-    def __init__(self, pidnum):
-        self.idnum = pidnum
+    def __init__(self, _idnum, _identifier):
+        self.idnum = _idnum
+        self.identifier = _identifier
         print "neuron " + str(self.idnum) + " initiated"
 
     def sum_weighted_inputs(self, alvls_studied, alvl_list):

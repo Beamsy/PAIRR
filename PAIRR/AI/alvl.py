@@ -1,9 +1,11 @@
-class Alvl():
+class Alvl:
 
+    identifier = None
     idnum = None
     weights = [0.5 for count in range(3)]
 
-    def __init__(self, pidnum):
-        print "a level " + str(pidnum) + " initiated"
-        idnum = pidnum
+    def __init__(self, _idnum, _identifier):
+        print "a level " + str(_idnum) + " initiated"
+        idnum = _idnum
+        identifier = _identifier
 
