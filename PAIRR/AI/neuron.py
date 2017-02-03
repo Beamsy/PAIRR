@@ -18,3 +18,8 @@ class Neuron:
 
     def get_total(self):
         return self.total
+
+    def __repr__(self):
+        return '{}: {} {}'.format(self.__class__.__name__,
+                                  self.identifier,
+                                  self.idnum)

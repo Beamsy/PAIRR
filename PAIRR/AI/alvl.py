@@ -6,6 +6,9 @@ class Alvl:
 
     def __init__(self, _idnum, _identifier):
         print "a level " + str(_idnum) + " initiated"
-        idnum = _idnum
-        identifier = _identifier
+        self.idnum = _idnum
+        self.identifier = _identifier
 
+    def __repr__(self):
+        return "ALevel: {} with ID {}".format(self.identifier,
+                                              self.idnum)
