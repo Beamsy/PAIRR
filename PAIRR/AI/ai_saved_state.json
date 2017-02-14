@@ -1,0 +1,16 @@
+{
+  "ALevels":[
+    {"id_num": 0, "identifier": "Environmental Science", "weights": [0.8, 0.65, 0.4]},
+    {"id_num": 1, "identifier": "Media Studies", "weights": [0.3, 0.3, 0.3]},
+    {"id_num": 2, "identifier": "French", "weights": [0.32, 0.28, 0.28]},
+    {"id_num": 3, "identifier": "Computer Science", "weights": [0.2, 0.3, 1]},
+    {"id_num": 4, "identifier": "Physics", "weights": [0.529, 0.48, 0.75]},
+    {"id_num": 5, "identifier": "Economics", "weights": [0.5, 0.5, 0.5]}
+  ],
+  "Degrees":[
+    {"id_num": 0, "identifier": "Animal Conservation"},
+    {"id_num": 1, "identifier": "Human Bio-science"},
+    {"id_num": 2, "identifier": "Computing"}
+  ]
+
+}

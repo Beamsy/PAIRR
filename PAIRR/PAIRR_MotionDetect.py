@@ -11,19 +11,18 @@ GPIO.setmode(GPIO.BCM)
 
 # Name the GPIO pins used by the PIR sensor and LEDs
 pirPin = 18
-#systemLedPin = 24
+# systemLedPin = 24
 motionLedPin = 23
 
 # Set the PIR pin as an input and ledPins as outputs
 GPIO.setup(pirPin, GPIO.IN)
-#GPIO.setup(systemLedPin, GPIO.OUT)
+# GPIO.setup(systemLedPin, GPIO.OUT)
 GPIO.setup(motionLedPin, GPIO.OUT)
-
 # This will show before the program runs to provide a bit of information
 # about the program and show it is running
 print "PIR test"
 print "To stop the program hit CTRL+C"
-#GPIO.output(systemLedPin, True)             # Turn on the red LED
+# GPIO.output(systemLedPin, True)             # Turn on the red LED
 GPIO.output(motionLedPin, False)            # Turn off the green LED
 print "Ready!"
 
