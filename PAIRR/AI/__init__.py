@@ -24,14 +24,14 @@ for item in json_data['Degrees']:
     neuron_list.append(Neuron(item['id_num'], str(item['identifier'])))
 
 # Current user input
-a_lvl1 = a_lvl_names.index(raw_input("Enter A Levels one line at a time: "))
-a_lvl2 = a_lvl_names.index(raw_input("A Level 2: "))
-a_lvl3 = a_lvl_names.index(raw_input("A Level 3: "))
-a_lvl_studied = {a_lvl1, a_lvl2, a_lvl3}
+a_lvl1 = a_lvl_list[a_lvl_names.index(raw_input("Enter A Levels one line at a time: "))]
+a_lvl2 = a_lvl_list[a_lvl_names.index(raw_input("A Level 2: "))]
+a_lvl3 = a_lvl_list[a_lvl_names.index(raw_input("A Level 3: "))]
+a_lvls_studied = {a_lvl1, a_lvl2, a_lvl3}
 
 # Performs total weight summation for all neurons individually
 for i in range(neuron_list.__len__()):
-    neuron_list[i].sum_weighted_inputs(a_lvl_studied, a_lvl_list)
+    neuron_list[i].sum_weighted_inputs(a_lvls_studied)
 
 
 # Sorts neurons by reverse weighting and selects highest weighted
