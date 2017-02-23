@@ -1,9 +1,0 @@
-120522 13:49:46  InnoDB: Started; log sequence number 0 43665
-120522 13:49:52 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: ready for connections.
-Version: '5.0.27-community-log'  socket: ''  port: 3306  MySQL Community Edition (GPL)
-120522 13:57:18 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Normal shutdown
-
-120522 13:57:18  InnoDB: Starting shutdown...
-120522 13:57:20  InnoDB: Shutdown completed; log sequence number 0 43665
-120522 13:57:20 [Note] N:\EASYPH~1\MySql\bin\mysqld.exe: Shutdown complete
-
