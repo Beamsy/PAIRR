@@ -23,8 +23,8 @@ class Neuron:
     def sum_weighted_inputs(self, alvls_studied):
         print "Summing neuron " + str(self.id_num)
         total = 0
-        for i in alvls_studied:
-            total = total + alvls_studied[i].weights[self.id_num]
+        for alvl in alvls_studied:
+            total = total + alvl.weights[self.id_num]
         self.total = total
 
     # A method to return the total attribute. This is necessary for the sorted method to work
