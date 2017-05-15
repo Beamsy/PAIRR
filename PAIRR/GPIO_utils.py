@@ -26,8 +26,8 @@ bad_button_pin = config.get('Pins', 'bad_button')
 # Set the PIR pin as an input and ledPins as outputs
 GPIO.setup(pir_pin, GPIO.IN)
 GPIO.setup(motion_led_pin, GPIO.OUT)
-GPIO.setup(good_button_pin, GPIO.IN)
-GPIO.setup(bad_button_pin, GPIO.OUT)
+GPIO.setup(good_button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(bad_button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.output(motion_led_pin, False)            # Turn off the green LED
 
 
