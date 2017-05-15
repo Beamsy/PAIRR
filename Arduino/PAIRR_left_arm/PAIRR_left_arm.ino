@@ -18,7 +18,7 @@ VarSpeedServo servo_wrist;      // Initialize an instance of a servo object for 
 int digipin_shoulder = 13;      // Use a variable for the pin allocation number of the shoulder
 int digipin_elbow = 11;         // Use a variable for the pin allocation number of the elbow
 int digipin_wrist = 9;          // Use a variable for the pin allocation number of the wrist
-int piInputPin = A3;            // Use a variable for the pin to read an analog input from the Pi
+            // Use a variable for the pin to read an analog input from the Pi
 
 // Initial Set Up
 void setup() {
@@ -26,7 +26,7 @@ void setup() {
   servo_elbow.attach(digipin_elbow);          // Connect the elbow servo object to the digital pin defined earlier
   servo_wrist.attach(digipin_wrist);          // Connect the wrist servo object to the digital pin defined earlier
 
-  pinMode(piInputPin, INPUT);      // sets the piInputPin as input
+        // sets the piInputPin as input
 
   servo_shoulder.write(165);       // Sets the intial position of the shoulder
   servo_elbow.write(10);           // Sets the intial position of the elbow
@@ -37,7 +37,7 @@ void setup() {
 void loop() {
 
   int val = 0;                              // Create variable to hold the input pin value, reset to zero each iteration
-  val = analogRead(piInputPin);             // Read the value going into piInputPin and store in val
+  val = 615;             // Read the value going into piInputPin and store in val
 
   // Movement loop. Execute if piInputPin has voltage above 3v
   if (val > 614) {
