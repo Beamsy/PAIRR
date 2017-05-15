@@ -15,12 +15,12 @@ GPIO.setmode(GPIO.BCM)
 config = ConfigParser.SafeConfigParser()
 config.read('Config/GPIO.cfg')
 
-
+pinout_section = 'Pinout'
 # Name the GPIO pins
-pir_pin = config.get('Pins', 'pir')
-motion_led_pin = config.get('Pins', 'motion_led')
-good_button_pin = config.get('Pins', 'good_button')
-bad_button_pin = config.get('Pins', 'bad_button')
+pir_pin = config.get(pinout_section, 'pir')
+motion_led_pin = config.get(pinout_section, 'motion_led')
+good_button_pin = config.get(pinout_section, 'good_button')
+bad_button_pin = config.get(pinout_section, 'bad_button')
 
 
 # Set the PIR pin as an input and ledPins as outputs
