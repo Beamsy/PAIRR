@@ -13,7 +13,7 @@ import ConfigParser
 
 GPIO.setmode(GPIO.BCM)
 config = ConfigParser.SafeConfigParser()
-config.read('Config/GPIO.cfg')
+config.read(r'Config\GPIO.cfg')
 
 pinout_section = 'Pinout'
 # Name the GPIO pins
