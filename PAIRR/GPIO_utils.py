@@ -21,7 +21,6 @@ pir_pin = int(config.get(pinout_section, 'pir'))
 motion_led_pin = int(config.get(pinout_section, 'motion_led'))
 good_button_pin = int(config.get(pinout_section, 'good_button'))
 bad_button_pin = int(config.get(pinout_section, 'bad_button'))
-print pir_pin + ' ' + motion_led_pin + ' ' + good_button_pin + ' ' + bad_button_pin
 
 # Set the PIR pin as an input and ledPins as outputs
 GPIO.setup(pir_pin, GPIO.IN)
