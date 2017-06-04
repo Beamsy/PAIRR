@@ -9,8 +9,8 @@ if __name__ == "__main__":
     while True:
         if wait_for_motion():
             code = raw_input()
-            student = student_access.name(db, code)
+            student = student_access.get_name(db, code)
             greeting = 'Hello {0}.'.format(student)
             say(greeting)
-            print greeting
+
 
