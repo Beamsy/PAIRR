@@ -9,7 +9,7 @@ import ConfigParser
 def __init__():
     # Read the database connection settings from a config file
     config = ConfigParser.SafeConfigParser()
-    config.read('Config/database.cfg')
+    config.read('./PAIRR/Config/database.cfg')
     # Enclose db connection in a try/except
     try:
         # This is the actual database connection event
