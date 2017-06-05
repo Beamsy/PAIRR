@@ -35,6 +35,7 @@ def __init__(a_lvls):
     elif a_lvls:
         a_lvls_studied = a_lvls
 
+
     # Performs total weight summation for all neurons individually
     for i in range(neuron_list.__len__()):
         neuron_list[i].sum_weighted_inputs(a_lvls_studied)
@@ -45,7 +46,7 @@ def __init__(a_lvls):
     # Prints the highest weighted neuron id and total
     print "Neuron " + str(selected.id_num) + ": " + str(selected.total)
 
-    # Prints the identifier of the selected neuron (the output!)
+    # Says the identifier of the selected neuron (the output!)
     voice_engine.say("You should study: " + selected.identifier)
 
     if 'arm' in platform.machine():
@@ -85,6 +86,3 @@ def __init__(a_lvls):
         backwards_propagation()
         voice_engine.say("Please help me learn by pressing green for good and red for bad.")
         voice_engine.say("Thank you!")
-
-
-
