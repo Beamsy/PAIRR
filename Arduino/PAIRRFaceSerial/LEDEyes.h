@@ -43,7 +43,7 @@ public:
 	void eyesResultRecv();
 	void eyesBlink();
 	void clearDisplays();
-
+  void loading();
 private:
 	unsigned long delayTime;
 	unsigned long pauseTime;

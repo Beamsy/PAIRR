@@ -22,10 +22,10 @@ LEDEyes ledEyes;
 #define SERVOMIN 150          // a minimum value, approx 0 degress
 #define SERVOMAX 650          // a maximum value, aprox 180 degrees
 #define NECKROTMIDDLE 335     // start position
-#define NECKROTRIGHT 234
-#define NECKROTLEFT 374
-#define NECKTILTMIDDLE 395    // start position
-#define NECKTILTFORWARD 320
+#define NECKROTRIGHT 240
+#define NECKROTLEFT 410
+#define NECKTILTMIDDLE 395
+#define NECKTILTFORWARD 320   // start position
 #define NECKTILTBACK 450
 #define SHOULDERDOWN 520      // start position
 #define SHOULDERUP 300
@@ -53,14 +53,19 @@ int cmpMvDly = 100;
 
 
 // Keeps count of how long PAIRR has been active
-int awakeTimer = 4;
+int awakeTimer = 6;
 
 // Set to true when PAIRR is awake (PIR detects motion)
 bool isAwake = false;
 
 // Used to compare against serial Input numbers
-int wakeUp = 1;
-int receivedResults = 2;
+uint8_t wakeUp = 1;
+uint8_t receivedResults = 2;
+uint8_t sleep = 3;
+uint8_t loading = 4;
+uint8_t lookScanner = 5;
+uint8_t lookBackProp = 6;
+uint8_t lookMiddle = 7;
 
 /****** Setup arduino *******/
 
@@ -81,7 +86,7 @@ void setup()
   /* set the initial start positions for all the servos
    * setChannelPWM(servo address, start position of pulse, end position of pulse) */
   pwm1.setChannelPWM(servoNeckRotate, NECKROTMIDDLE);
-  pwm1.setChannelPWM(servoNeckTilt, NECKTILTMIDDLE);
+  pwm1.setChannelPWM(servoNeckTilt, NECKTILTFORWARD);
   pwm1.setChannelPWM(servoShoulder, SHOULDERDOWN);
   pwm1.setChannelPWM(servoElbow, ELBOWDOWN);  
   pwm1.setChannelPWM(servoWrist, WRISTMIDDLE);
@@ -106,6 +111,7 @@ void loop()
       {
         isAwake = true;
         motionDetected();
+        Serial.write('a');
       }
       else
       {
@@ -126,18 +132,66 @@ void loop()
       }
       awakeTimer += 10;
       resultsReceived();
+      Serial.write('a');
     }
-  }
-
-  // Robot blinks whilst waiting for input and then sleeps after 4 loops through
-  if (isAwake && 0 < awakeTimer)
-  {
-    ledEyes.eyesBlink();
-    awakeTimer--;
-  } 
-  else if (isAwake) 
-  {
-    sleepRobot();
+    else if (serialInput == sleep)
+    {
+      if(isAwake)
+      {
+        awakeTimer = 0;
+        sleepRobot();
+      }
+    }
+    else if (serialInput == loading)
+    {
+      if(!isAwake){
+        isAwake = true;
+        wakeUpHead();
+        awakeTimer += 4;
+      }
+      for(int i=0; i<9; i++){
+        ledEyes.loading();
+      }
+      Serial.write('a');
+    }
+    else if (serialInput == lookScanner)
+    {
+      if(!isAwake){
+        isAwake = true;
+        wakeUpHead();
+        awakeTimer += 4;
+      }
+      lookRightDown();
+      Serial.write('a');
+    }
+    else if (serialInput == lookBackProp)
+    {
+      if(!isAwake){
+        isAwake = true;
+        wakeUpHead();
+        awakeTimer += 4;
+      }
+      lookLeftDown();
+      Serial.write('a');
+    }
+    else if (serialInput == lookMiddle)
+    {
+      if(isAwake){
+        move(servoNeckRotate, NECKROTMIDDLE, 500);
+        move(servoNeckTilt, NECKTILTMIDDLE, 500);
+      }
+    }
+  }else{
+    // Robot blinks whilst waiting for input and then sleeps after 4 loops through
+    if (isAwake && 0 < awakeTimer)
+    {
+      ledEyes.eyesBlink();
+      awakeTimer--;
+    } 
+    else if (isAwake) 
+    {
+      sleepRobot();
+    }
   }
 }
 
@@ -196,6 +250,11 @@ void resultsReceived()
 // and run the sleep animation, also clearing led boards
 void sleepRobot()
 {
+  move(servoNeckRotate, NECKROTMIDDLE, 4000);
+  ledEyes.droopyEyes();
+  delay(500);
+  ledEyes.eyeBlink();
+  delay(500);
   ledEyes.droopyEyes();
   delay(500);
   sleepyHead();
@@ -203,6 +262,7 @@ void sleepRobot()
   wakeUpHead();
   ledEyes.surprisedEyes1();
   delay(750);
+  ledEyes.droopyEyes();
   sleepyHead();
   ledEyes.clearDisplays();
   isAwake = false;
@@ -210,7 +270,7 @@ void sleepRobot()
 }
 
 /* DEFINE SERVO FUNCTIONS */ 
-void move(int pin, uint16_t pos, uint8_t speed)
+void move(int pin, uint16_t pos, uint16_t speed)
 {
   uint16_t currentPos = pwm1.getChannelPWM(pin);
   if(currentPos<pos){
@@ -239,23 +299,23 @@ void wakeUpHead()
 /* neck tilt: 'sleepy head' from middle to forward */
 void sleepyHead()
 {
-  move(servoNeckTilt, NECKTILTFORWARD, 200);
+  move(servoNeckTilt, NECKTILTFORWARD, 1500);
 }
 
 /* neck rotation: indicating 'no' */
 void shakeHead()
 {     
   /* middle to right */
-  move(servoNeckRotate, NECKROTRIGHT, 100);
+  move(servoNeckRotate, NECKROTRIGHT, 500);
   delay(cmpMvDly);
   /* right to left */
-  move(servoNeckRotate, NECKROTLEFT, 100);
+  move(servoNeckRotate, NECKROTLEFT, 500);
   delay(cmpMvDly);
   /* left to right */
-  move(servoNeckRotate, NECKROTRIGHT, 100);
+  move(servoNeckRotate, NECKROTRIGHT, 500);
   delay(cmpMvDly);
   /* right to middle */
-  move(servoNeckRotate, NECKROTMIDDLE, 100);
+  move(servoNeckRotate, NECKROTMIDDLE, 500);
   delay(cmpMvDly);
 }
 
@@ -263,16 +323,16 @@ void shakeHead()
 void nodHead()
 {     
   /* middle to down */
-  move(servoNeckTilt, NECKTILTFORWARD, 100);
+  move(servoNeckTilt, NECKTILTFORWARD, 500);
   delay(cmpMvDly);
   /* down to up */
-  move(servoNeckTilt, NECKTILTBACK, 100);
+  move(servoNeckTilt, NECKTILTBACK, 500);
   delay(cmpMvDly);
   /* up to down */
-  move(servoNeckTilt, NECKTILTFORWARD, 100);
+  move(servoNeckTilt, NECKTILTFORWARD, 500);
   delay(cmpMvDly);
   /* down to middle */
-  move(servoNeckTilt, NECKTILTMIDDLE, 100);
+  move(servoNeckTilt, NECKTILTMIDDLE, 500);
   delay(cmpMvDly);
 }
 
@@ -280,7 +340,7 @@ void nodHead()
 void liftShoulder()
 {
   /* down to up */
-  move(servoShoulder, SHOULDERUP, 100);
+  move(servoShoulder, SHOULDERUP, 500);
   delay(cmpMvDly);
 }
 
@@ -288,7 +348,7 @@ void liftShoulder()
 void dropShoulder()
 {
   /* up to down */
-  move(servoShoulder, SHOULDERDOWN, 100);
+  move(servoShoulder, SHOULDERDOWN, 500);
   delay(cmpMvDly);
 }
 
@@ -296,7 +356,7 @@ void dropShoulder()
 void liftElbow()
 {
   /* down to up */
-  move(servoElbow, ELBOWUP, 100);
+  move(servoElbow, ELBOWUP, 500);
   delay(cmpMvDly);
 }
 
@@ -304,7 +364,7 @@ void liftElbow()
 void dropElbow()
 {
   /* up to down */
-  move(servoElbow, ELBOWDOWN, 100);
+  move(servoElbow, ELBOWDOWN, 500);
   delay(cmpMvDly);
 }
 
@@ -312,23 +372,23 @@ void dropElbow()
 void waveHand()
 {
   /* middle to left */
-  move(servoWrist, WRISTRIGHT, 100);
+  move(servoWrist, WRISTRIGHT, 500);
   delay(cmpMvDly);
   /* left to right */
-  move(servoWrist, WRISTLEFT, 100);
+  move(servoWrist, WRISTLEFT, 500);
   delay(cmpMvDly);
   /* right to left */
-  move(servoWrist, WRISTRIGHT, 100);
+  move(servoWrist, WRISTRIGHT, 500);
   delay(cmpMvDly);
   /* left to middle */
-  move(servoWrist, WRISTMIDDLE, 100);
+  move(servoWrist, WRISTMIDDLE, 500);
   delay(cmpMvDly);
 }
 
 void waveArm()
 {
-  move(servoShoulder, SHOULDERUP, 100);
-  move(servoElbow, 360, 100);
+  move(servoShoulder, SHOULDERUP, 500);
+  move(servoElbow, 360, 500);
   delay(500);
   for(int i=0; i<3; i++){
     move(servoElbow, ELBOWUP, 50);
@@ -336,8 +396,18 @@ void waveArm()
     move(servoElbow, 360, 50);
     delay(200);
   }
-  move(servoElbow, ELBOWDOWN, 100);
-  move(servoShoulder, SHOULDERDOWN, 100);
+  move(servoElbow, ELBOWDOWN, 500);
+  move(servoShoulder, SHOULDERDOWN, 500);
 }
 
+void lookLeftDown()
+{
+  move(servoNeckRotate, NECKROTLEFT, 500);
+  move(servoNeckTilt, NECKTILTFORWARD, 500);
+}
 
+void lookRightDown()
+{
+  move(servoNeckRotate, NECKROTRIGHT, 500);
+  move(servoNeckTilt, NECKTILTFORWARD, 500);
+}

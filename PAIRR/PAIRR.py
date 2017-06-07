@@ -19,11 +19,13 @@ if __name__ == "__main__":
         while True:
             if GPIO_utils.check_for_motion():
                 say("Hi there, please come scan your student id!")
-                SerialConnect.serial_connect(1)
+                SerialConnect.serial_connect(SerialConnect.WAKEUP)
+                SerialConnect.serial_connect(SerialConnect.LOOKSCANNER)
                 code = raw_input("Waiting for input")
-                say(str(code))
                 student = student_access.get_name(db, code)
                 greeting = 'Hello {0}.'.format(student)
+                SerialConnect.serial_connect(SerialConnect.LOOKMIDDLE)
+                SerialConnect.serial_wait()
                 say(greeting)
                 AI.__init__(student_access.get_a_lvls(db, code))
             sleep(0.5)

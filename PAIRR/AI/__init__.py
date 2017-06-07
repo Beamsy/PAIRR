@@ -44,13 +44,14 @@ def __init__(a_lvls):
 
     # Sorts neurons by reverse weighting and selects highest weighted
     selected = sorted(neuron_list, key=Neuron.get_total, reverse=True)[0]
-
+    SerialConnect.serial_connect(SerialConnect.LOADING)
+    SerialConnect.serial_wait()
     # Prints the highest weighted neuron id and total
     print "Neuron " + str(selected.id_num) + ": " + str(selected.total)
-    SerialConnect.serial_connect(2)
+    SerialConnect.serial_connect(SerialConnect.RECEIVEDRESULTS)
     # Says the identifier of the selected neuron (the output!)
     voice_engine.say("You should study: " + selected.identifier)
-
+    SerialConnect.serial_wait()
     # This section of code will only run if the computer it is running on is ARM based.
     # This means it will not run on a normal computer, but will run on a Raspberry Pi.
     if 'arm' in platform.machine():
@@ -85,11 +86,13 @@ def __init__(a_lvls):
                 for item in json_data['ALevels']:
                     if item['id_num'] == a_lvl.id_num:
                         item['weights'][selected.id_num] += update * 0.01
-            with open(os.path.join(os.getcwd(), "ai_saved_state.json"), mode="w") as json_file:
+            with open("AI/ai_saved_state.json", mode="w") as json_file:
                 json.dump(json_data, json_file)
 
         sleep(2.5)
         voice_engine.say("Was this a good recommendation or not?")
         voice_engine.say("Please help me learn by pressing green for good and red for bad.")
+        SerialConnect.serial_connect(SerialConnect.LOOKBACKPROP)
         backwards_propagation()
         voice_engine.say("Thank you!")
+        SerialConnect.serial_connect(SerialConnect.SLEEP)

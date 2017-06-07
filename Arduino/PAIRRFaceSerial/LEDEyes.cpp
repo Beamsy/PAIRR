@@ -170,11 +170,59 @@ byte droopy[] =
   B00111000,
   B01111000,
   B11111000,
-  B11111000,
-  B11111000,
+  B10011000,
+  B10011000,
   B11111000,
   B01111000,
   B00111000
+};
+
+byte loading1[] =
+{
+  B00111100,
+  B01111110,
+  B11111111,
+  B11111111,
+  B11001111,
+  B11101111,
+  B01111110,
+  B00111100
+};
+
+byte loading2[] =
+{
+  B00111100,
+  B01111110,
+  B11101111,
+  B11001111,
+  B11111111,
+  B11111111,
+  B01111110,
+  B00111100
+};
+
+byte loading3[] =
+{
+  B00111100,
+  B01111110,
+  B11110111,
+  B11110011,
+  B11111111,
+  B11111111,
+  B01111110,
+  B00111100
+};
+
+byte loading4[] =
+{
+  B00111100,
+  B01111110,
+  B11111111,
+  B11111111,
+  B11110011,
+  B11110111,
+  B01111110,
+  B00111100
 };
 
 
@@ -504,3 +552,41 @@ void LEDEyes::clearDisplays()
 	lc.clearDisplay(0);
   lc.clearDisplay(1);
 }
+
+void LEDEyes::loading()
+{
+ for (int d = 0; d < 2; d++)
+  {
+    for (int i = 0; i < 8; i++)
+    {
+      lc.setRow(d, i, loading1[i]);
+    }
+  }
+  delay(100);
+  for (int d = 0; d < 2; d++)
+  {
+    for (int i = 0; i < 8; i++)
+    {
+      lc.setRow(d, i, loading2[i]);
+    }
+  }
+  delay(100);
+  for (int d = 0; d < 2; d++)
+  {
+    for (int i = 0; i < 8; i++)
+    {
+      lc.setRow(d, i, loading3[i]);
+    }
+  }
+  delay(100);
+  for (int d = 0; d < 2; d++)
+  {
+    for (int i = 0; i < 8; i++)
+    {
+      lc.setRow(d, i, loading4[i]);
+    }
+  }
+  delay(100);
+}
+
+
