@@ -1,6 +1,6 @@
-int dataIn = 4;
-int load = 3;
-int clock = 2;
+int dataIn = 12;
+int load = 10;
+int clock = 11;
 
 int maxInUse = 1;  // How many units in use
 

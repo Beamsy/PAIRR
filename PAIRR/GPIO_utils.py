@@ -13,11 +13,12 @@ import ConfigParser
 
 GPIO.setmode(GPIO.BCM)
 config = ConfigParser.SafeConfigParser()
-config.read('./PAIRR/Config/GPIO.cfg')
+config.read('Config/GPIO.cfg')
 
 pinout_section = 'Pinout'
 # Name the GPIO pins
 pir_pin = int(config.get(pinout_section, 'pir'))
+system_led_pin = int(config.get(pinout_section, 'system_led'))
 motion_led_pin = int(config.get(pinout_section, 'motion_led'))
 good_button_pin = int(config.get(pinout_section, 'good_button'))
 bad_button_pin = int(config.get(pinout_section, 'bad_button'))
@@ -27,25 +28,23 @@ GPIO.setup(pir_pin, GPIO.IN)
 GPIO.setup(motion_led_pin, GPIO.OUT)
 GPIO.setup(good_button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(bad_button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(system_led_pin, GPIO.OUT)
 GPIO.output(motion_led_pin, False)            # Turn off the green LED
+GPIO.output(system_led_pin, True)
 
 
-def wait_for_motion():
-    # Run a continuous loop listening for an input from the PIR
-    try:
-        while True:
-            # Checks if there's an input from the PIR
-            if GPIO.input(pir_pin):
-                GPIO.output(motion_led_pin, True)     # Turn on Green LED
-                return True
-            # If no input detected turns the LED off.
-            else:
-                GPIO.output(motion_led_pin, False)    # Turn off green LED
-            sleep(0.1)
-    except KeyboardInterrupt:
-        GPIO.cleanup()
-        exit(0)
-
-
+# Function to cleanup the GPIO pins
 def cleanup():
     GPIO.cleanup()
+
+
+def check_for_motion():
+    # Checks if there's an input from the PIR
+    if GPIO.input(pir_pin):
+        GPIO.output(motion_led_pin, True)     # Turn on Green LED
+        return True
+    # If no input detected turns the LED off.
+    else:
+        GPIO.output(motion_led_pin, False)    # Turn off green LED
+        return False
+

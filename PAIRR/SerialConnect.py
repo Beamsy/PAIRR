@@ -1,12 +1,18 @@
 # Imports needed for serial connection and the time library(sleep function)
 import serial
-import time
+serial_connection = None
+
+
+def __init__():
+    global serial_connection
+    serial_connection = serial.Serial('/dev/ttyACM0', 9600)
+    print "Serial Initiated"
+    return
+
 
 # Sets up serial connection to given port and writes a number to it
-def serialConnect(numberToSend):
-    serialConnection = serial.Serial('/dev/ttyACM1', 9600)
-    time.sleep(2)
-    serialConnection.write(numberToSend)
+def serial_connect(number_to_send):
+    serial_connection.write(str(number_to_send))
     return
 
 

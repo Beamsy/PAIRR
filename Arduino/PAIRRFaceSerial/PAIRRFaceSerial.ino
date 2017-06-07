@@ -1,15 +1,16 @@
+
 /* Import the LEDEyes library */
-#include <LEDEyes.h>
+#include "LEDEyes.h"
 
 /* import the arduino wire library */
-#include <Wire.h>
+#include "Wire.h"
 /* import the adafruit servo driver library */
-#include <Adafruit_PWMServoDriver.h>
+#include "PCA9685.h"
 
 /******* Create and assign members *******/
 
 /* create a new servo driver object call pwm1 */
-Adafruit_PWMServoDriver pwm1 = Adafruit_PWMServoDriver(0x40);
+PCA9685 pwm1;
 
 /* Create LEDEyes object called ledEyes */
 LEDEyes ledEyes;
@@ -20,20 +21,19 @@ LEDEyes ledEyes;
  * SHOULDER ROTATION: full down=485(start position), full up=235 */
 #define SERVOMIN 150          // a minimum value, approx 0 degress
 #define SERVOMAX 650          // a maximum value, aprox 180 degrees
-#define NECKROTMIDDLE 304     // start position
-#define NECKROTMIDDLE 304     // start position
+#define NECKROTMIDDLE 335     // start position
 #define NECKROTRIGHT 234
 #define NECKROTLEFT 374
-#define NECKTILTMIDDLE 365    // start position
-#define NECKTILTFORWARD 300
+#define NECKTILTMIDDLE 395    // start position
+#define NECKTILTFORWARD 320
 #define NECKTILTBACK 450
-#define SHOULDERDOWN 480      // start position
-#define SHOULDERUP 315
-#define ELBOWDOWN 225         // start position
-#define ELBOWUP 415
-#define WRISTMIDDLE 300         // start position
-#define WRISTROTATELEFT 350
-#define WRISTROTATERIGHT 250
+#define SHOULDERDOWN 520      // start position
+#define SHOULDERUP 300
+#define ELBOWDOWN 230         // start position
+#define ELBOWUP 400
+#define WRISTMIDDLE 330         // start position
+#define WRISTLEFT 400
+#define WRISTRIGHT 260
 
 /* set up a variable to store the address of a particular servo
  * available addresses run from 0 to 15 */
@@ -50,10 +50,7 @@ int aniDly = 25;
 int mvDly = 4;
 /* set up a variable to place a short delay each complete movement */
 int cmpMvDly = 100;
-/* set up a variable for the value of the digital input pin
- * and a variable to store the read value */
-int digitalPin = 7;
-int pinVal = 0;
+
 
 // Keeps count of how long PAIRR has been active
 int awakeTimer = 4;
@@ -69,22 +66,25 @@ int receivedResults = 2;
 
 void setup()
 {
+  
   /* start serial, used for receiving inputs from the Pi */
   Serial.begin(9600);
-  
   /* begin running the PWM code
    * and set the frequecncy they run at */
-  pwm1.begin();
-  pwm1.setPWMFreq(50);
-  yield();
+  Wire.begin();
+  pwm1.resetDevices();
+  ledEyes.init(true);
+  
+  pwm1.init(B000000);
+  pwm1.setPWMFrequency(50);
 
   /* set the initial start positions for all the servos
-   * setPWM(servo address, start position of pulse, end position of pulse) */
-  pwm1.setPWM(servoNeckRotate, 0, NECKROTMIDDLE);
-  pwm1.setPWM(servoNeckTilt, 0, NECKTILTFORWARD);
-  pwm1.setPWM(servoShoulder, 0, SHOULDERDOWN);
-  pwm1.setPWM(servoElbow, 0, ELBOWDOWN);  
-  pwm1.setPWM(servoWrist, 0, WRISTMIDDLE);
+   * setChannelPWM(servo address, start position of pulse, end position of pulse) */
+  pwm1.setChannelPWM(servoNeckRotate, NECKROTMIDDLE);
+  pwm1.setChannelPWM(servoNeckTilt, NECKTILTMIDDLE);
+  pwm1.setChannelPWM(servoShoulder, SHOULDERDOWN);
+  pwm1.setChannelPWM(servoElbow, ELBOWDOWN);  
+  pwm1.setChannelPWM(servoWrist, WRISTMIDDLE);
  
   /* set a short delay after set up and before routine begins */
   delay(1000);
@@ -102,7 +102,7 @@ void loop()
     // Wake up, triggered by the PIR on the Pi
     if (serialInput == wakeUp)
     {
-      if (false == isAwake)
+      if (!isAwake)
       {
         isAwake = true;
         motionDetected();
@@ -119,23 +119,23 @@ void loop()
     else if (serialInput == receivedResults)
     {
       // If the ID gets scanned when PAIRR is asleep, wake up head
-      if (false == isAwake)
+      if (!isAwake)
       {
         ledEyes.eyeCenter();
         wakeUpHead();
       }
-      
+      awakeTimer += 10;
       resultsReceived();
     }
   }
 
   // Robot blinks whilst waiting for input and then sleeps after 4 loops through
-  if (true == isAwake && 0 < awakeTimer)
+  if (isAwake && 0 < awakeTimer)
   {
     ledEyes.eyesBlink();
     awakeTimer--;
   } 
-  else if (true == isAwake) 
+  else if (isAwake) 
   {
     sleepRobot();
   }
@@ -154,16 +154,6 @@ void motionDetected()
   // Using the LEDEyes library, I am calling the eyesAwake function 
   // which runs the wake up routine
   ledEyes.eyesAwake();
-  
-  /* call the 'shake head' function defined below the loop
-  * rotates neck to indicate no */
-  shakeHead();
-  delay(1000);
-  
-  /* call the 'nod head' function defined below the loop
-  * tilts the neck to indicate yes */
-  nodHead();
-  delay(1000);
   
   /* call the 'lift shoulder' function defined below the loop
   * lifts the upper arm from down to up */
@@ -185,11 +175,7 @@ void motionDetected()
   
   /* call the 'drop elbow' function defined below the loop
    * drops the lower arm from up to down */
-  dropElbow();
-  
-  /* call the 'drop shoulder' function defined below the loop
-   * lowers the upper arm from up to down */
-  dropShoulder();
+  waveArm();
 }
 
 // Function to be called when results are received, sets 
@@ -210,6 +196,13 @@ void resultsReceived()
 // and run the sleep animation, also clearing led boards
 void sleepRobot()
 {
+  ledEyes.droopyEyes();
+  delay(500);
+  sleepyHead();
+  delay(100);
+  wakeUpHead();
+  ledEyes.surprisedEyes1();
+  delay(750);
   sleepyHead();
   ledEyes.clearDisplays();
   isAwake = false;
@@ -217,61 +210,52 @@ void sleepRobot()
 }
 
 /* DEFINE SERVO FUNCTIONS */ 
+void move(int pin, uint16_t pos, uint8_t speed)
+{
+  uint16_t currentPos = pwm1.getChannelPWM(pin);
+  if(currentPos<pos){
+    for(currentPos;currentPos<pos;currentPos++){
+      pwm1.setChannelPWM(pin, currentPos);
+      delayMicroseconds(speed);
+    }
+  }else if(currentPos>pos){
+    for(currentPos;currentPos>pos;currentPos--){
+      pwm1.setChannelPWM(pin, currentPos);
+      delayMicroseconds(speed);
+    }
+  }else if(currentPos==pos){
+    delay(cmpMvDly);
+  }
+}
+
 
 /* neck tilt: 'wake up' from forward to middle */
 void wakeUpHead()
 {
   /* down to up */
-  for (uint16_t pulselen = NECKTILTFORWARD; pulselen <= NECKTILTMIDDLE; pulselen++)
-  {
-    pwm1.setPWM(servoNeckTilt, 0, pulselen);
-    delay(mvDly);
-  }
-  delay(cmpMvDly);
+  move(servoNeckTilt, NECKTILTMIDDLE, 50);
 }
 
 /* neck tilt: 'sleepy head' from middle to forward */
 void sleepyHead()
 {
-  /* down to up */
-  for (uint16_t pulselen = NECKTILTMIDDLE; pulselen >= NECKTILTFORWARD; pulselen--)
-  {
-    pwm1.setPWM(servoNeckTilt, 0, pulselen);
-    delay(mvDly);
-  }
-  delay(cmpMvDly);
+  move(servoNeckTilt, NECKTILTFORWARD, 200);
 }
 
 /* neck rotation: indicating 'no' */
 void shakeHead()
 {     
   /* middle to right */
-  for (uint16_t pulselen = NECKROTMIDDLE; pulselen >= NECKROTRIGHT; pulselen--)
-  {
-    pwm1.setPWM(servoNeckRotate, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckRotate, NECKROTRIGHT, 100);
   delay(cmpMvDly);
   /* right to left */
-  for (uint16_t pulselen = NECKROTRIGHT; pulselen <= NECKROTLEFT; pulselen++)
-  {
-    pwm1.setPWM(servoNeckRotate, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckRotate, NECKROTLEFT, 100);
   delay(cmpMvDly);
   /* left to right */
-  for (uint16_t pulselen = NECKROTLEFT; pulselen >= NECKROTRIGHT; pulselen--)
-  {
-    pwm1.setPWM(servoNeckRotate, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckRotate, NECKROTRIGHT, 100);
   delay(cmpMvDly);
   /* right to middle */
-  for (uint16_t pulselen = NECKROTRIGHT; pulselen <= NECKROTMIDDLE; pulselen++)
-  {
-    pwm1.setPWM(servoNeckRotate, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckRotate, NECKROTMIDDLE, 100);
   delay(cmpMvDly);
 }
 
@@ -279,32 +263,16 @@ void shakeHead()
 void nodHead()
 {     
   /* middle to down */
-  for (uint16_t pulselen = NECKTILTMIDDLE; pulselen >= NECKTILTFORWARD; pulselen--)
-  {
-    pwm1.setPWM(servoNeckTilt, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckTilt, NECKTILTFORWARD, 100);
   delay(cmpMvDly);
   /* down to up */
-  for (uint16_t pulselen = NECKTILTFORWARD; pulselen <= NECKTILTBACK; pulselen++)
-  {
-    pwm1.setPWM(servoNeckTilt, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckTilt, NECKTILTBACK, 100);
   delay(cmpMvDly);
   /* up to down */
-  for (uint16_t pulselen = NECKTILTBACK; pulselen >= NECKTILTFORWARD; pulselen--)
-  {
-    pwm1.setPWM(servoNeckTilt, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckTilt, NECKTILTFORWARD, 100);
   delay(cmpMvDly);
   /* down to middle */
-  for (uint16_t pulselen = NECKTILTFORWARD; pulselen <= NECKTILTMIDDLE; pulselen++)
-  {
-    pwm1.setPWM(servoNeckTilt, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoNeckTilt, NECKTILTMIDDLE, 100);
   delay(cmpMvDly);
 }
 
@@ -312,11 +280,7 @@ void nodHead()
 void liftShoulder()
 {
   /* down to up */
-  for (uint16_t pulselen = SHOULDERDOWN; pulselen >= SHOULDERUP; pulselen--)
-  {
-    pwm1.setPWM(servoShoulder, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoShoulder, SHOULDERUP, 100);
   delay(cmpMvDly);
 }
 
@@ -324,11 +288,7 @@ void liftShoulder()
 void dropShoulder()
 {
   /* up to down */
-  for (uint16_t pulselen = SHOULDERUP; pulselen <= SHOULDERDOWN; pulselen++)
-  {
-    pwm1.setPWM(servoShoulder, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoShoulder, SHOULDERDOWN, 100);
   delay(cmpMvDly);
 }
 
@@ -336,11 +296,7 @@ void dropShoulder()
 void liftElbow()
 {
   /* down to up */
-  for (uint16_t pulselen = ELBOWDOWN; pulselen <= ELBOWUP; pulselen++)
-  {
-    pwm1.setPWM(servoElbow, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoElbow, ELBOWUP, 100);
   delay(cmpMvDly);
 }
 
@@ -348,11 +304,7 @@ void liftElbow()
 void dropElbow()
 {
   /* up to down */
-  for (uint16_t pulselen = ELBOWUP; pulselen >= ELBOWDOWN; pulselen--)
-  {
-    pwm1.setPWM(servoElbow, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoElbow, ELBOWDOWN, 100);
   delay(cmpMvDly);
 }
 
@@ -360,31 +312,32 @@ void dropElbow()
 void waveHand()
 {
   /* middle to left */
-  for (uint16_t pulselen = WRISTMIDDLE; pulselen <= WRISTROTATELEFT; pulselen++)
-  {
-    pwm1.setPWM(servoWrist, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoWrist, WRISTRIGHT, 100);
   delay(cmpMvDly);
   /* left to right */
-  for (uint16_t pulselen = WRISTROTATELEFT; pulselen >= WRISTROTATERIGHT; pulselen--)
-  {
-    pwm1.setPWM(servoWrist, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoWrist, WRISTLEFT, 100);
   delay(cmpMvDly);
   /* right to left */
-  for (uint16_t pulselen = WRISTROTATERIGHT; pulselen <= WRISTROTATELEFT; pulselen++)
-  {
-    pwm1.setPWM(servoWrist, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoWrist, WRISTRIGHT, 100);
   delay(cmpMvDly);
   /* left to middle */
-  for (uint16_t pulselen = WRISTROTATELEFT; pulselen >= WRISTMIDDLE; pulselen--)
-  {
-    pwm1.setPWM(servoWrist, 0, pulselen);
-    delay(mvDly);
-  }
+  move(servoWrist, WRISTMIDDLE, 100);
   delay(cmpMvDly);
 }
+
+void waveArm()
+{
+  move(servoShoulder, SHOULDERUP, 100);
+  move(servoElbow, 360, 100);
+  delay(500);
+  for(int i=0; i<3; i++){
+    move(servoElbow, ELBOWUP, 50);
+    delay(200);
+    move(servoElbow, 360, 50);
+    delay(200);
+  }
+  move(servoElbow, ELBOWDOWN, 100);
+  move(servoShoulder, SHOULDERDOWN, 100);
+}
+
+
