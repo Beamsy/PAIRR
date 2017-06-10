@@ -57,44 +57,61 @@ def __init__(a_lvls):
     if 'arm' in platform.machine():
         import GPIO_utils
 
+        # Add event detection through GPIO
         def add_event_detects():
             GPIO_utils.GPIO.add_event_detect(GPIO_utils.good_button_pin, GPIO_utils.GPIO.RISING,
                                              callback=increase_relation, bouncetime=300)
             GPIO_utils.GPIO.add_event_detect(GPIO_utils.bad_button_pin, GPIO_utils.GPIO.RISING,
                                              callback=decrease_relation, bouncetime=300)
 
+        # Remove event detection through GPIO
         def remove_event_detects():
             GPIO_utils.GPIO.remove_event_detect(GPIO_utils.good_button_pin)
             GPIO_utils.GPIO.remove_event_detect(GPIO_utils.bad_button_pin)
 
+        # Backwards propagation function
         def backwards_propagation():
             add_event_detects()
             sleep(10)
             remove_event_detects()
 
+        # Increase relationship
         def increase_relation(channel):
             remove_event_detects()
             update_saved_state(+1)
 
+        # Decrease relationship
         def decrease_relation(channel):
             remove_event_detects()
             update_saved_state(-1)
 
+        # Update the saved state according to which relationship function is called
         def update_saved_state(update):
+            # Bug output
             print "State updated! "+str(update)
+            # Iterate through the a_lvl objects in a_lvls_studied
             for a_lvl in a_lvls_studied:
+                # Iterate through the ALevels section of the json file
                 for item in json_data['ALevels']:
+                    # If it's one of the a_lvls
                     if item['id_num'] == a_lvl.id_num:
+                        # Change the weighting for the selected degree
                         item['weights'][selected.id_num] += update * 0.01
+            # Open the json_file in write mode
             with open("AI/ai_saved_state.json", mode="w") as json_file:
+                # Dump the modified data
                 json.dump(json_data, json_file)
 
+        # A sleep
         sleep(2.5)
         voice_engine.say("Was this a good recommendation or not?")
         voice_engine.say("Please help me learn by pressing green for good and red for bad.")
+        # Sens command to arduino for the robot to look at the backprop buttons
         SerialConnect.serial_connect(SerialConnect.LOOKBACKPROP)
-	SerialConnect.serial_wait()
+        SerialConnect.serial_wait()
+        # Runs the backwards_propagation method defined above
         backwards_propagation()
         voice_engine.say("Thank you!")
+        # Puts the robot to sleep
         SerialConnect.serial_connect(SerialConnect.SLEEP)
-	SerialConnect.serial_wait()
+        SerialConnect.serial_wait()
