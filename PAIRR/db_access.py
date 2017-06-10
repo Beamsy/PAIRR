@@ -17,6 +17,7 @@ def __init__():
                                      user=config.get('Connection', 'user'),  # set username
                                      passwd=config.get('Connection', 'passwd'),  # set password
                                      db=config.get('Connection', 'db'))  # name of the database
+	print "Database connection started"
         return db
     # Catches errors from MySQL connection
     # Gives us some custom error messages

@@ -24,4 +24,6 @@ def serial_connect(number_to_send):
     return
 
 def serial_wait():
-    serial_connection.read()
+    while True:
+        if(serial_connection.read()=='a'):
+	    return

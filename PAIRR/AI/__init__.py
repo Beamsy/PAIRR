@@ -93,6 +93,8 @@ def __init__(a_lvls):
         voice_engine.say("Was this a good recommendation or not?")
         voice_engine.say("Please help me learn by pressing green for good and red for bad.")
         SerialConnect.serial_connect(SerialConnect.LOOKBACKPROP)
+	SerialConnect.serial_wait()
         backwards_propagation()
         voice_engine.say("Thank you!")
         SerialConnect.serial_connect(SerialConnect.SLEEP)
+	SerialConnect.serial_wait()
